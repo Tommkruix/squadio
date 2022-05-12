@@ -1,0 +1,9 @@
+@mixin set-z-index($z-index) {
+  $z-index-map: (
+    'default': auto,
+    'negative': -1,
+    'max': 1,
+  );
+
+  z-index: map-get($z-index-map, $z-index);
+}
